@@ -1,89 +1,101 @@
 {
-    // --------------------------------- Base Config.
-    "window.titleBarStyle": "custom",
-    "workbench.colorTheme": "Monokai",
-    "workbench.activityBar.visible": false,
-    "editor.codeActionsOnSave": null,
-    // ------------------ Comments color.
-    "editor.tokenColorCustomizations": {
-        "comments": "#9eafb3"
-    },
-    // --------------------------------- Text editor colors general
-    "workbench.colorCustomizations": {
-        // Letras de menú en general / general menues letters color.
-        "foreground": "#dbdbdb",
-        // Color de fondo del Editor. / text editor background color.
-        "editor.background": "#141414",
-        // Color de fondo de Termianl / Terminal background color.
-        "panel.background": "#050505",
-        // Color de archivo seleccionado en el Lateral / Selected archive/folder of side menu.
-        "list.activeSelectionBackground": "#14c8d480",
-        // Background del navegador izquierdo / Color background of side menu.
-        "sideBar.background": "#0c0c0c",
-        // color del cursor. (donde escribís) / Cursor color.
-        "editorCursor.foreground": "#00aeff",
-        // Color de los números laterales / Lane numbers color.
-        "editorLineNumber.foreground": "#6f7cb6",
-        // Color de Área Selecionada / Selected area color.
-        "editor.selectionBackground": "#88c5b154",
-        // Color de Código Plegado / Wrap code color.
-        "editor.foldBackground": "#47944409",
-        // Color de la línea donde está el cursor / Current lane color.
-        "editor.lineHighlightBackground": "#4a86771c"
-    },
-    // --------------------------------------- Config of cursor, tab, etc
-    "editor.cursorBlinking": "expand",
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.cursorSurroundingLines": 3,
-    "editor.cursorSurroundingLinesStyle": "all",
-    "editor.cursorWidth": 3,
-    "editor.tabSize": 3,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "explorer.confirmDelete": false,
-    // ---------------------------- Activate Prettier at Saving. (Ctrl + S)
-    "editor.formatOnSave": true,
-    "editor.fontSize": 13,
-    // -----------------------
-    "launch": {
-        "configurations": [],
-        "compounds": []
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "security.workspace.trust.untrustedFiles": "open",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    // --------------------------------------- Pettier config (Complement must be instaled).
-    "prettier.proseWrap": "always",
-    "workbench.activityBar.visible": false,
-    "prettier.singleQuote": true,
-    "prettier.useTabs": true,
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "prettier.arrowParens": "always",
-    "prettier.bracketSameLine": false,
-    "prettier.bracketSpacing": true,
-    "prettier.embeddedLanguageFormatting": "auto",
-    "prettier.htmlWhitespaceSensitivity": "css",
-    "prettier.insertPragma": false,
-    "prettier.jsxSingleQuote": true,
-    "prettier.printWidth": 80,
-    "prettier.proseWrap": "preserve",
-    "prettier.quoteProps": "as-needed",
-    "prettier.requirePragma": false,
-    "prettier.semi": true,
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 0,
-    "prettier.trailingComma": "es5",
-    "prettier.useTabs": true,
-    "prettier.vueIndentScriptAndStyle": false,
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
+	"window.titleBarStyle": "custom",
+	"workbench.colorTheme": "Monokai",
+	"editor.codeActionsOnSave": { "value": false },
+
+	// Color de los comentarios.
+	"editor.tokenColorCustomizations": {
+		"comments": "#fbff00"
+	},
+
+	"workbench.colorCustomizations": {
+		// Letras de menú en general.
+		"foreground": "#d6dcdd",
+		// Color de fondo del Editor.
+		"editor.background": "#141414",
+		// Color de fondo de Termianl.
+		"panel.background": "#050505",
+		// Color de archivo seleccionado en el Lateral.
+		"list.activeSelectionBackground": "#14c8d480",
+		// Background del navegador izquierdo.
+		"sideBar.background": "#0c0c0c",
+		// color del cursor. (donde escribís).
+		"editorCursor.foreground": "#00aeff",
+		// Color de los números laterales.
+		"editorLineNumber.foreground": "#4c7474",
+		// Color de Área Selecionada.
+		"editor.selectionBackground": "#79797933",
+		// Color de Código Plegado.
+		"editor.foldBackground": "#47944409",
+		// Color de la línea donde está el cursor.
+		"editor.lineHighlightBackground": "#1a6e593a"
+	},
+	"editor.cursorBlinking": "expand",
+	"editor.cursorSmoothCaretAnimation": true,
+	"editor.cursorSurroundingLines": 2,
+	"editor.cursorSurroundingLinesStyle": "all",
+	"editor.cursorWidth": 3,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"explorer.confirmDelete": false,
+	"launch": {
+		"configurations": [],
+		"compounds": []
+	},
+	"workbench.activityBar.visible": false,
+
+	// Config Prettier ----------------------------
+	"security.workspace.trust.untrustedFiles": "open",
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+
+	"prettier.arrowParens": "always",
+	"prettier.bracketSameLine": false,
+	"prettier.bracketSpacing": true,
+	"prettier.embeddedLanguageFormatting": "auto",
+	"prettier.htmlWhitespaceSensitivity": "css",
+	"prettier.insertPragma": false,
+	"prettier.jsxSingleQuote": true,
+	"prettier.printWidth": 80,
+	"prettier.proseWrap": "preserve",
+	"prettier.quoteProps": "as-needed",
+	"prettier.requirePragma": false,
+	"prettier.semi": true,
+	"prettier.singleQuote": true,
+	"prettier.tabWidth": 0,
+	"prettier.trailingComma": "es5",
+	"prettier.useTabs": true,
+	"prettier.vueIndentScriptAndStyle": false,
+	// -----------------------------------------
+
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.fontWeight": 1,
+	"editor.formatOnType": true,
+	"scm.inputFontSize": 14,
+	"terminal.integrated.fontWeightBold": 1,
+	"editor.scrollbar.verticalScrollbarSize": 10,
+	"editor.scrollbar.horizontalScrollbarSize": 20,
+	"terminal.integrated.fontSize": 15,
+	"editor.minimap.size": "fill",
+	"explorer.compactFolders": false,
+	"editor.stablePeek": true,
+	"workbench.tree.expandMode": "doubleClick",
+	"editor.fontSize": 16,
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	"editor.renderLineHighlight": "all",
+	"editor.linkedEditing": true,
+	"editor.renderLineHighlightOnlyWhenFocus": true,
+	"editor.unfoldOnClickAfterEndOfLine": true
 }
