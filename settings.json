@@ -31,7 +31,7 @@
 		"editor.lineHighlightBackground": "#1a6e593a"
 	},
 	"editor.cursorBlinking": "expand",
-	"editor.cursorSmoothCaretAnimation": true,
+	"editor.cursorSmoothCaretAnimation": "on",
 	"editor.cursorSurroundingLines": 2,
 	"editor.cursorSurroundingLinesStyle": "all",
 	"editor.cursorWidth": 3,
@@ -41,7 +41,6 @@
 		"configurations": [],
 		"compounds": []
 	},
-	"workbench.activityBar.visible": false,
 
 	// Config Prettier ----------------------------
 	"security.workspace.trust.untrustedFiles": "open",
@@ -87,7 +86,6 @@
 	"explorer.compactFolders": false,
 	"editor.stablePeek": true,
 	"workbench.tree.expandMode": "doubleClick",
-	"editor.fontSize": 16,
 	"[typescriptreact]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
@@ -97,5 +95,56 @@
 	"editor.renderLineHighlight": "all",
 	"editor.linkedEditing": true,
 	"editor.renderLineHighlightOnlyWhenFocus": true,
-	"editor.unfoldOnClickAfterEndOfLine": true
+	"editor.unfoldOnClickAfterEndOfLine": true,
+	"highlight.regexes": {
+		"((?:<!-- *)?(?:#| @||./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *console.log(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+			"filterFileRegex": ".*(?<!CHANGELOG.md)$",
+			"decorations": [
+				{
+					"overviewRulerColor": "",
+					"backgroundColor": "rgba(200,200,200,.05)",
+					"border": "1px solid rgba(200,50,00,.2)",
+					"color": "",
+					"fontWeight": ""
+				}
+			]
+		}
+	},
+	"editor.suggest.showReferences": false,
+	"gutterpreview.sourceFolder": "src, assets, frontend",
+	"volar.autoCompleteRefs": true,
+	"workbench.editor.splitInGroupLayout": "vertical",
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"codesnap.shutterAction": "copy",
+	"codesnap.containerPadding": ".3em",
+	"codesnap.showWindowControls": false,
+	"codesnap.backgroundColor": "rgb(111 111 111)",
+	"workbench.editor.highlightModifiedTabs": true,
+	"editor.unicodeHighlight.nonBasicASCII": false,
+	"activitusbar.activeColour": "lightgreen",
+	"update.mode": "start",
+	"editor.inlineSuggest.enabled": true,
+	"editor.fontSize": 15,
+	"github.copilot.enable": {
+		"*": false,
+		"yaml": false,
+		"plaintext": false,
+		"markdown": false
+	},
+	"telemetry.telemetryLevel": "off",
+	"workbench.activityBar.visible": false,
+	"explorer.confirmDragAndDrop": false,
+	"editor.tabSize": 2,
+	"tabnine.experimentalAutoImports": true,
+
+	// This makes 'Tailwind CSS IntelliSense' extension,
+	// sugest auto completion on objects called TW
+	"tailwindCSS.experimental.classRegex": [
+		["styles \\=([^;]*);", "'([^']*)'"],
+		["styles \\=([^;]*);", "\"([^\"]*)\""],
+		["styles \\=([^;]*);", "\\`([^\\`]*)\\`"]
+	]
+	// -----------------------------------------
 }
