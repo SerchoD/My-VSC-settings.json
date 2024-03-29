@@ -1,16 +1,18 @@
 {
 	"window.titleBarStyle": "custom",
 	"workbench.colorTheme": "Monokai",
-	"editor.codeActionsOnSave": { "value": false },
+	"editor.codeActionsOnSave": {
+		"value": "never"
+	},
 
 	// Color de los comentarios.
 	"editor.tokenColorCustomizations": {
-		"comments": "#fbff00"
+		"comments": "#a7aa05"
 	},
 
 	"workbench.colorCustomizations": {
 		// Letras de menú en general.
-		"foreground": "#d6dcdd",
+		"foreground": "#a7abac",
 		// Color de fondo del Editor.
 		"editor.background": "#141414",
 		// Color de fondo de Termianl.
@@ -20,7 +22,7 @@
 		// Background del navegador izquierdo.
 		"sideBar.background": "#0c0c0c",
 		// color del cursor. (donde escribís).
-		"editorCursor.foreground": "#00aeff",
+		"editorCursor.foreground": "#00adb3",
 		// Color de los números laterales.
 		"editorLineNumber.foreground": "#4c7474",
 		// Color de Área Selecionada.
@@ -28,13 +30,27 @@
 		// Color de Código Plegado.
 		"editor.foldBackground": "#47944409",
 		// Color de la línea donde está el cursor.
-		"editor.lineHighlightBackground": "#1a6e593a"
+		"editor.lineHighlightBackground": "#ffffff10",
+
+		"editorIndentGuide.activeBackground1": "#ffc40017",
+		"editorIndentGuide.activeBackground2": "#ff000017",
+		"editorIndentGuide.activeBackground3": "#a5128317",
+		"editorIndentGuide.activeBackground4": "#ff8c0017",
+		"editorIndentGuide.activeBackground5": "#ffc40017",
+		"editorIndentGuide.activeBackground6": "#ffc40017",
+
+		// non-active indent guide colors
+		"editorIndentGuide.background1": "#0066ff17",
+		"editorIndentGuide.background2": "#00e5ff17",
+		"editorIndentGuide.background3": "#00e5ff17",
+		"editorIndentGuide.background4": "#00e5ff17",
+		"editorIndentGuide.background5": "#00e5ff17",
+		"editorIndentGuide.background6": "#00e5ff17"
 	},
 	"editor.cursorBlinking": "expand",
 	"editor.cursorSmoothCaretAnimation": "on",
 	"editor.cursorSurroundingLines": 2,
-	"editor.cursorSurroundingLinesStyle": "all",
-	"editor.cursorWidth": 3,
+	"editor.cursorWidth": 4,
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"explorer.confirmDelete": false,
 	"launch": {
@@ -45,7 +61,7 @@
 	// Config Prettier ----------------------------
 	"security.workspace.trust.untrustedFiles": "open",
 	"[javascript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -67,7 +83,6 @@
 	"prettier.requirePragma": false,
 	"prettier.semi": true,
 	"prettier.singleQuote": true,
-	"prettier.tabWidth": 0,
 	"prettier.trailingComma": "es5",
 	"prettier.useTabs": true,
 	"prettier.vueIndentScriptAndStyle": false,
@@ -79,10 +94,9 @@
 	"editor.formatOnType": true,
 	"scm.inputFontSize": 14,
 	"terminal.integrated.fontWeightBold": 1,
-	"editor.scrollbar.verticalScrollbarSize": 10,
+	"editor.scrollbar.verticalScrollbarSize": 0,
 	"editor.scrollbar.horizontalScrollbarSize": 20,
 	"terminal.integrated.fontSize": 15,
-	"editor.minimap.size": "fill",
 	"explorer.compactFolders": false,
 	"editor.stablePeek": true,
 	"workbench.tree.expandMode": "doubleClick",
@@ -123,7 +137,7 @@
 	"codesnap.backgroundColor": "rgb(111 111 111)",
 	"workbench.editor.highlightModifiedTabs": true,
 	"editor.unicodeHighlight.nonBasicASCII": false,
-	"activitusbar.activeColour": "lightgreen",
+	"activitusbar.activeColour": "skyblue",
 	"update.mode": "start",
 	"editor.inlineSuggest.enabled": true,
 	"editor.fontSize": 15,
@@ -134,9 +148,7 @@
 		"markdown": false
 	},
 	"telemetry.telemetryLevel": "off",
-	"workbench.activityBar.visible": false,
 	"explorer.confirmDragAndDrop": false,
-	"editor.tabSize": 2,
 	"tabnine.experimentalAutoImports": true,
 
 	// This makes 'Tailwind CSS IntelliSense' extension,
@@ -145,6 +157,24 @@
 		["styles \\=([^;]*);", "'([^']*)'"],
 		["styles \\=([^;]*);", "\"([^\"]*)\""],
 		["styles \\=([^;]*);", "\\`([^\\`]*)\\`"]
-	]
+	],
+	"workbench.list.smoothScrolling": true,
+	"terminal.integrated.smoothScrolling": true,
+	"editor.smoothScrolling": true,
+	"activitusbar.combineWorkspaceSettings": true,
+	"editor.minimap.maxColumn": 60,
+	"editor.minimap.showSlider": "always",
+	"editor.minimap.size": "fill",
+	"window.confirmBeforeClose": "always",
+	"editor.guides.bracketPairs": true,
+	"cSpell.language": "en es-ES",
+	"workbench.activityBar.location": "hidden",
+	"cSpell.userWords": ["firefox", "sercho", "tailwindcss"],
+	"editor.stickyScroll.enabled": false,
+	"notebook.stickyScroll.mode": "flat",
+	"editor.tabSize": 2,
+	"editor.cursorSurroundingLinesStyle": "all",
+	"editor.comments.ignoreEmptyLines": false
+
 	// -----------------------------------------
 }
