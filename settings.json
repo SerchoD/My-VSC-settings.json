@@ -2,12 +2,7 @@
 	"window.titleBarStyle": "custom",
 	"workbench.colorTheme": "Monokai",
 	"editor.codeActionsOnSave": {
-		"value": "never"
-	},
-
-	// Color de los comentarios.
-	"editor.tokenColorCustomizations": {
-		"comments": "#a7aa05"
+		"value": "always"
 	},
 
 	"workbench.colorCustomizations": {
@@ -26,11 +21,15 @@
 		// Color de los números laterales.
 		"editorLineNumber.foreground": "#4c7474",
 		// Color de Área Selecionada.
-		"editor.selectionBackground": "#79797933",
+		"editor.selectionBackground": "#7979798f",
 		// Color de Código Plegado.
 		"editor.foldBackground": "#47944409",
 		// Color de la línea donde está el cursor.
-		"editor.lineHighlightBackground": "#ffffff10",
+		"editor.lineHighlightBackground": "#ffffff1e",
+
+		"editor.findMatchHighlightBackground": "#e253ffab", // Color de fondo para las coincidencias de búsqueda resaltadas
+
+		"editor.selectionHighlightBackground": "#79797946", // Color de fondo para las coincidencias no exactas de la selección
 
 		"editorIndentGuide.activeBackground1": "#ffc40017",
 		"editorIndentGuide.activeBackground2": "#ff000017",
@@ -40,13 +39,33 @@
 		"editorIndentGuide.activeBackground6": "#ffc40017",
 
 		// non-active indent guide colors
-		"editorIndentGuide.background1": "#0066ff17",
+		"editorIndentGuide.background1": "#0c48a317",
 		"editorIndentGuide.background2": "#00e5ff17",
 		"editorIndentGuide.background3": "#00e5ff17",
 		"editorIndentGuide.background4": "#00e5ff17",
 		"editorIndentGuide.background5": "#00e5ff17",
-		"editorIndentGuide.background6": "#00e5ff17"
+		"editorIndentGuide.background6": "#00e5ff17",
+		//
+		// "terminal.background": "#131212",
+		// "terminal.foreground": "#eb8e16",
+		"terminal.ansiBlack": "#1D2021",
+		// "terminal.ansiBrightBlack": "#665C54",
+		// "terminal.ansiBrightBlue": "#0D6678",
+		// "terminal.ansiBrightCyan": "#8BA59B",
+		"terminal.ansiBrightGreen": "#348516c5",
+		// 		"terminal.ansiBrightMagenta": "#8F4673",
+		// 		"terminal.ansiBrightRed": "#FB543F",
+		// "terminal.ansiBrightWhite": "#FDF4C1",
+		// 		"terminal.ansiBrightYellow": "#FAC03B",
+		"terminal.ansiBlue": "#0a92bb",
+		// "terminal.ansiCyan": "#8BA59B",
+		"terminal.ansiGreen": "#5c9724"
+		// 		"terminal.ansiMagenta": "#8F4673",
+		// "terminal.ansiRed": "#FB543F"
+		// "terminal.ansiWhite": "#141414"
+		// "terminal.ansiYellow": "#FAC03B",
 	},
+
 	"editor.cursorBlinking": "expand",
 	"editor.cursorSmoothCaretAnimation": "on",
 	"editor.cursorSurroundingLines": 2,
@@ -67,7 +86,13 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[javascriptreact]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 
 	"prettier.arrowParens": "always",
@@ -77,32 +102,26 @@
 	"prettier.htmlWhitespaceSensitivity": "css",
 	"prettier.insertPragma": false,
 	"prettier.jsxSingleQuote": true,
-	"prettier.printWidth": 80,
+	"prettier.printWidth": 100,
 	"prettier.proseWrap": "preserve",
 	"prettier.quoteProps": "as-needed",
 	"prettier.requirePragma": false,
 	"prettier.semi": true,
 	"prettier.singleQuote": true,
-	"prettier.trailingComma": "es5",
+	"prettier.singleAttributePerLine": false,
+	"prettier.trailingComma": "all",
 	"prettier.useTabs": true,
-	"prettier.vueIndentScriptAndStyle": false,
+	"prettier.resolveGlobalModules": true,
+	"prettier.vueIndentScriptAndStyle": true,
 	// -----------------------------------------
 
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
-	"editor.fontWeight": 1,
 	"editor.formatOnType": true,
 	"scm.inputFontSize": 14,
-	"terminal.integrated.fontWeightBold": 1,
 	"editor.scrollbar.verticalScrollbarSize": 0,
 	"editor.scrollbar.horizontalScrollbarSize": 20,
-	"terminal.integrated.fontSize": 15,
-	"explorer.compactFolders": false,
 	"editor.stablePeek": true,
 	"workbench.tree.expandMode": "doubleClick",
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
-	},
 	"[scss]": {
 		"editor.defaultFormatter": "vscode.css-language-features"
 	},
@@ -125,31 +144,21 @@
 		}
 	},
 	"editor.suggest.showReferences": false,
-	"gutterpreview.sourceFolder": "src, assets, frontend",
-	"volar.autoCompleteRefs": true,
+
 	"workbench.editor.splitInGroupLayout": "vertical",
 	"[css]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"codesnap.shutterAction": "copy",
-	"codesnap.containerPadding": ".3em",
-	"codesnap.showWindowControls": false,
-	"codesnap.backgroundColor": "rgb(111 111 111)",
+
 	"workbench.editor.highlightModifiedTabs": true,
 	"editor.unicodeHighlight.nonBasicASCII": false,
 	"activitusbar.activeColour": "skyblue",
 	"update.mode": "start",
 	"editor.inlineSuggest.enabled": true,
 	"editor.fontSize": 15,
-	"github.copilot.enable": {
-		"*": false,
-		"yaml": false,
-		"plaintext": false,
-		"markdown": false
-	},
+
 	"telemetry.telemetryLevel": "off",
 	"explorer.confirmDragAndDrop": false,
-	"tabnine.experimentalAutoImports": true,
 
 	// This makes 'Tailwind CSS IntelliSense' extension,
 	// sugest auto completion on objects called TW
@@ -159,7 +168,6 @@
 		["styles \\=([^;]*);", "\\`([^\\`]*)\\`"]
 	],
 	"workbench.list.smoothScrolling": true,
-	"terminal.integrated.smoothScrolling": true,
 	"editor.smoothScrolling": true,
 	"activitusbar.combineWorkspaceSettings": true,
 	"editor.minimap.maxColumn": 60,
@@ -167,14 +175,52 @@
 	"editor.minimap.size": "fill",
 	"window.confirmBeforeClose": "always",
 	"editor.guides.bracketPairs": true,
-	"cSpell.language": "en es-ES",
 	"workbench.activityBar.location": "hidden",
-	"cSpell.userWords": ["firefox", "sercho", "tailwindcss"],
 	"editor.stickyScroll.enabled": false,
 	"notebook.stickyScroll.mode": "flat",
 	"editor.tabSize": 2,
 	"editor.cursorSurroundingLinesStyle": "all",
-	"editor.comments.ignoreEmptyLines": false
+	"editor.comments.ignoreEmptyLines": false,
+
+	"terminal.integrated.smoothScrolling": true,
+	"terminal.integrated.defaultProfile.linux": "bash",
+	"terminal.integrated.fontWeightBold": 500,
+	"terminal.integrated.fontSize": 15,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"editor.largeFileOptimizations": false,
+
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"liveServer.settings.donotVerifyTags": true,
+	"codesnap.containerPadding": "1em",
+	"codesnap.target": "window",
+
+	// Color de los comentarios.
+	"editor.tokenColorCustomizations": {
+		"comments": "#a7aa05",
+		"textMateRules": [
+			{
+				"scope": ["entity.name.type.interface", "entity.name.type"],
+				"settings": {
+					"fontStyle": "italic underline",
+					"foreground": "#cf75e6"
+				}
+			},
+			{
+				"scope": ["storage.type.interface.ts", "storage.type.enum.ts"],
+				"settings": {
+					"fontStyle": "italic",
+					// "foreground": "#ce3535"
+					"foreground": "#35ceb4"
+				}
+			}
+		]
+	},
+	"editor.suggest.showFolders": false,
+	"explorer.autoReveal": false,
+	"explorer.fileNesting.expand": false,
+	"explorer.compactFolders": false
 
 	// -----------------------------------------
 }
