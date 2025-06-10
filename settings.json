@@ -1,226 +1,211 @@
 {
-	"window.titleBarStyle": "custom",
+	"editor.formatOnSave": true,
 	"workbench.colorTheme": "Monokai",
-	"editor.codeActionsOnSave": {
-		"value": "always"
-	},
-
+	"workbench.activityBar.location": "bottom",
+	"window.customTitleBarVisibility": "auto",
+	"window.titleBarStyle": "custom",
+	"editor.stickyScroll.enabled": false,
+	"editor.fastScrollSensitivity": 1,
+	// THEME CUSTOMISATION ##############################################
+	// ##################################################################
+	"editor.cursorWidth": 4,
+	"terminal.integrated.cursorWidth": 5,
 	"workbench.colorCustomizations": {
-		// Letras de menú en general.
 		"foreground": "#a7abac",
-		// Color de fondo del Editor.
 		"editor.background": "#141414",
-		// Color de fondo de Termianl.
 		"panel.background": "#050505",
-		// Color de archivo seleccionado en el Lateral.
 		"list.activeSelectionBackground": "#14c8d480",
-		// Background del navegador izquierdo.
 		"sideBar.background": "#0c0c0c",
-		// color del cursor. (donde escribís).
-		"editorCursor.foreground": "#00adb3",
-		// Color de los números laterales.
+		"editorCursor.foreground": "#00e0e7",
 		"editorLineNumber.foreground": "#4c7474",
-		// Color de Área Selecionada.
 		"editor.selectionBackground": "#7979798f",
-		// Color de Código Plegado.
 		"editor.foldBackground": "#47944409",
-		// Color de la línea donde está el cursor.
-		"editor.lineHighlightBackground": "#ffffff1e",
-
-		"editor.findMatchHighlightBackground": "#e253ffab", // Color de fondo para las coincidencias de búsqueda resaltadas
-
-		"editor.selectionHighlightBackground": "#79797946", // Color de fondo para las coincidencias no exactas de la selección
-
-		"editorIndentGuide.activeBackground1": "#ffc40017",
+		"editor.lineHighlightBackground": "#ffffff10",
+		"editor.findMatchHighlightBackground": "#e253ffab",
+		"editor.selectionHighlightBackground": "#79797946",
+		"editorIndentGuide.activeBackground1": "#fdc40717",
 		"editorIndentGuide.activeBackground2": "#ff000017",
 		"editorIndentGuide.activeBackground3": "#a5128317",
 		"editorIndentGuide.activeBackground4": "#ff8c0017",
 		"editorIndentGuide.activeBackground5": "#ffc40017",
 		"editorIndentGuide.activeBackground6": "#ffc40017",
-
-		// non-active indent guide colors
 		"editorIndentGuide.background1": "#0c48a317",
 		"editorIndentGuide.background2": "#00e5ff17",
 		"editorIndentGuide.background3": "#00e5ff17",
 		"editorIndentGuide.background4": "#00e5ff17",
 		"editorIndentGuide.background5": "#00e5ff17",
 		"editorIndentGuide.background6": "#00e5ff17",
-		//
-		// "terminal.background": "#131212",
-		// "terminal.foreground": "#eb8e16",
 		"terminal.ansiBlack": "#1D2021",
-		// "terminal.ansiBrightBlack": "#665C54",
-		// "terminal.ansiBrightBlue": "#0D6678",
-		// "terminal.ansiBrightCyan": "#8BA59B",
 		"terminal.ansiBrightGreen": "#348516c5",
-		// 		"terminal.ansiBrightMagenta": "#8F4673",
-		// 		"terminal.ansiBrightRed": "#FB543F",
-		// "terminal.ansiBrightWhite": "#FDF4C1",
-		// 		"terminal.ansiBrightYellow": "#FAC03B",
 		"terminal.ansiBlue": "#0a92bb",
-		// "terminal.ansiCyan": "#8BA59B",
 		"terminal.ansiGreen": "#5c9724"
-		// 		"terminal.ansiMagenta": "#8F4673",
-		// "terminal.ansiRed": "#FB543F"
-		// "terminal.ansiWhite": "#141414"
-		// "terminal.ansiYellow": "#FAC03B",
 	},
-
-	"editor.cursorBlinking": "expand",
-	"editor.cursorSmoothCaretAnimation": "on",
-	"editor.cursorSurroundingLines": 2,
-	"editor.cursorWidth": 4,
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"explorer.confirmDelete": false,
-	"launch": {
-		"configurations": [],
-		"compounds": []
-	},
-
-	// Config Prettier ----------------------------
-	"security.workspace.trust.untrustedFiles": "open",
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[html]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-
-	"prettier.arrowParens": "always",
-	"prettier.bracketSameLine": false,
-	"prettier.bracketSpacing": true,
-	"prettier.embeddedLanguageFormatting": "auto",
-	"prettier.htmlWhitespaceSensitivity": "css",
-	"prettier.insertPragma": false,
-	"prettier.jsxSingleQuote": true,
-	"prettier.printWidth": 100,
-	"prettier.proseWrap": "preserve",
-	"prettier.quoteProps": "as-needed",
-	"prettier.requirePragma": false,
-	"prettier.semi": true,
-	"prettier.singleQuote": true,
-	"prettier.singleAttributePerLine": false,
-	"prettier.trailingComma": "all",
-	"prettier.useTabs": true,
-	"prettier.resolveGlobalModules": true,
-	"prettier.vueIndentScriptAndStyle": true,
-	// -----------------------------------------
-
-	"editor.formatOnSave": true,
-	"editor.formatOnType": true,
-	"scm.inputFontSize": 14,
-	"editor.scrollbar.verticalScrollbarSize": 0,
-	"editor.scrollbar.horizontalScrollbarSize": 20,
-	"editor.stablePeek": true,
-	"workbench.tree.expandMode": "doubleClick",
-	"[scss]": {
-		"editor.defaultFormatter": "vscode.css-language-features"
-	},
-	"editor.renderLineHighlight": "all",
-	"editor.linkedEditing": true,
-	"editor.renderLineHighlightOnlyWhenFocus": true,
-	"editor.unfoldOnClickAfterEndOfLine": true,
-	"highlight.regexes": {
-		"((?:<!-- *)?(?:#| @||./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *console.log(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
-			"filterFileRegex": ".*(?<!CHANGELOG.md)$",
-			"decorations": [
-				{
-					"overviewRulerColor": "",
-					"backgroundColor": "rgba(200,200,200,.05)",
-					"border": "1px solid rgba(200,50,00,.2)",
-					"color": "",
-					"fontWeight": ""
-				}
-			]
-		}
-	},
-	"editor.suggest.showReferences": false,
-
-	"workbench.editor.splitInGroupLayout": "vertical",
-	"[css]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-
-	"workbench.editor.highlightModifiedTabs": true,
-	"editor.unicodeHighlight.nonBasicASCII": false,
-	"activitusbar.activeColour": "skyblue",
-	"update.mode": "start",
-	"editor.inlineSuggest.enabled": true,
-	"editor.fontSize": 15,
-
-	"telemetry.telemetryLevel": "off",
-	"explorer.confirmDragAndDrop": false,
-
-	// This makes 'Tailwind CSS IntelliSense' extension,
-	// sugest auto completion on objects called TW
-	"tailwindCSS.experimental.classRegex": [
-		["styles \\=([^;]*);", "'([^']*)'"],
-		["styles \\=([^;]*);", "\"([^\"]*)\""],
-		["styles \\=([^;]*);", "\\`([^\\`]*)\\`"]
-	],
-	"workbench.list.smoothScrolling": true,
-	"editor.smoothScrolling": true,
-	"activitusbar.combineWorkspaceSettings": true,
-	"editor.minimap.maxColumn": 60,
-	"editor.minimap.showSlider": "always",
-	"editor.minimap.size": "fill",
-	"window.confirmBeforeClose": "always",
-	"editor.guides.bracketPairs": true,
-	"workbench.activityBar.location": "hidden",
-	"editor.stickyScroll.enabled": false,
-	"notebook.stickyScroll.mode": "flat",
-	"editor.tabSize": 2,
-	"editor.cursorSurroundingLinesStyle": "all",
-	"editor.comments.ignoreEmptyLines": false,
-
-	"terminal.integrated.smoothScrolling": true,
-	"terminal.integrated.defaultProfile.linux": "bash",
-	"terminal.integrated.fontWeightBold": 500,
-	"terminal.integrated.fontSize": 15,
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"editor.largeFileOptimizations": false,
-
-	"files.associations": {
-		"*.css": "tailwindcss"
-	},
-	"liveServer.settings.donotVerifyTags": true,
-	"codesnap.containerPadding": "1em",
-	"codesnap.target": "window",
-
-	// Color de los comentarios.
 	"editor.tokenColorCustomizations": {
 		"comments": "#a7aa05",
 		"textMateRules": [
 			{
-				"scope": ["entity.name.type.interface", "entity.name.type"],
+				"scope": "entity.name.function",
+				"settings": {
+					// #A6E22E original color
+					// "foreground": "#A6E22E",
+					// "fontStyle": "bold"
+				}
+			},
+			{
+				"scope": "variable.parameter",
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": [
+					"entity.name.type.interface",
+					"entity.name.type"
+				],
 				"settings": {
 					"fontStyle": "italic underline",
 					"foreground": "#cf75e6"
 				}
 			},
 			{
-				"scope": ["storage.type.interface.ts", "storage.type.enum.ts"],
+				"scope": [
+					"storage.type.interface.ts",
+					"storage.type.enum.ts"
+				],
 				"settings": {
 					"fontStyle": "italic",
-					// "foreground": "#ce3535"
 					"foreground": "#35ceb4"
+				}
+			},
+			{
+				"scope": [
+					"entity.other.attribute-name.tsx",
+					"entity.other.attribute-name.html"
+				],
+				"settings": {
+					"foreground": "#8f8dc7"
 				}
 			}
 		]
 	},
-	"editor.suggest.showFolders": false,
-	"explorer.autoReveal": false,
+	// ##################################################################
+	// ##################################################################
+	// Tailwind CSS settings
+	"tailwindCSS.experimental.classRegex": [
+		[
+			"styles\\s*(?::\\s*[^=]*)?=\\s*([^;]*);",
+			"'([^']*)'"
+		],
+		[
+			"styles\\s*(?::\\s*[^=]*)?=\\s*([^;]*);",
+			"\"([^\"]*)\""
+		],
+		[
+			"styles\\s*(?::\\s*[^=]*)?=\\s*([^;]*);",
+			"\\`([^\\`]*)\\`"
+		],
+		[
+			"[a-zA-Z]*[cC]lass[a-zA-Z]*\\s*(?::\\s*[^=]*)?=\\s*([^;]*);",
+			"'([^']*)'"
+		],
+		[
+			"[a-zA-Z]*[cC]lass[a-zA-Z]*\\s*(?::\\s*[^=]*)?=\\s*([^;]*);",
+			"\"([^\"]*)\""
+		],
+		[
+			"[a-zA-Z]*[cC]lass[a-zA-Z]*\\s*(?::\\s*[^=]*)?=\\s*([^;]*);",
+			"\\`([^\\`]*)\\`"
+		]
+	],
+	"telemetry.telemetryLevel": "off",
+	"editor.cursorBlinking": "expand",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"javascript.preferGoToSourceDefinition": true,
+	"typescript.preferGoToSourceDefinition": true,
+	"highlight-matching-tag.highlightFromContent": true,
+	"editor.fontSize": 13,
+	"terminal.integrated.fontSize": 13,
+	"explorer.confirmDelete": false,
+	"auto-close-tag.disableOnLanguage": [],
+	"auto-close-tag.activationOnLanguage": [
+		"xml",
+		"php",
+		"blade",
+		"ejs",
+		"jinja",
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"plaintext",
+		"markdown",
+		"vue",
+		"liquid",
+		"erb",
+		"lang-cfml",
+		"cfml",
+		"HTML (EEx)",
+		"HTML (Eex)",
+		"plist"
+	],
+	"auto-close-tag.fullMode": true,
+	"auto-close-tag.SublimeText3Mode": true,
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"editor.tabSize": 2,
+	"workbench.statusBar.visible": false,
 	"explorer.fileNesting.expand": false,
-	"explorer.compactFolders": false
-
-	// -----------------------------------------
+	"highlight-matching-tag.styles": {
+		"opening": {
+			"name": {
+				"underline": "fuchsia",
+			}
+		}
+	},
+	"workbench.sideBar.location": "right",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"workbench.iconTheme": "vscode-icons",
+	"vsicons.presets.jsonOfficial": true,
+	"vsicons.projectDetection.autoReload": true,
+	"vsicons.dontShowNewVersionMessage": true,
+	"typescript.preferences.useAliasesForRenames": false,
+	"errorLens.fontStyleItalic": true,
+	"errorLens.messageBackgroundMode": "message",
+	"errorLens.onSave": true,
+	"errorLens.problemRangeDecorationEnabled": true,
+	"errorLens.fontWeight": "300",
+	"explorer.confirmDragAndDrop": false,
+	"codesnap.shutterAction": "copy",
+	"material-ui-snippets.showNotesOnStartup": false,
+	"explorer.compactFolders": false,
+	"git.openRepositoryInParentFolders": "never",
+	"markdown-preview-enhanced.previewTheme": "monokai.css",
+	"editor.inlineSuggest.suppressSuggestions": true,
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"extensions.ignoreRecommendations": true
 }
