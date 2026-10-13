@@ -24,5 +24,9 @@
       "snippet": "console.log(\"${CLIPBOARD} in ${TM_FILENAME}: \", ${CLIPBOARD});"
     },
     "when": "editorTextFocus && (editorLangId == javascript || editorLangId == javascriptreact || editorLangId == typescript || editorLangId == typescriptreact)"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.toggleSidebarVisibility"
   }
 ]
