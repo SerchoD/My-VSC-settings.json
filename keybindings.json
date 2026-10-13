@@ -1,0 +1,28 @@
+[
+  {
+    "key": "pageup",
+    "command": "cursorHome",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "pagedown",
+    "command": "cursorEnd",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "workbench.action.chat.toggle"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "console.log(\"${CLIPBOARD} in ${TM_FILENAME}: \", ${CLIPBOARD});"
+    },
+    "when": "editorTextFocus && (editorLangId == javascript || editorLangId == javascriptreact || editorLangId == typescript || editorLangId == typescriptreact)"
+  }
+]
