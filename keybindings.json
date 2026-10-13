@@ -26,7 +26,7 @@
     "when": "editorTextFocus && (editorLangId == javascript || editorLangId == javascriptreact || editorLangId == typescript || editorLangId == typescriptreact)"
   },
   {
-    "key": "ctrl+e",
+    "key": "ctrl+shift+e",
     "command": "workbench.action.toggleSidebarVisibility"
   }
 ]
